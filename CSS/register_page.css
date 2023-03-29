@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+ body > header {
+    width: 15%;
+    height: 100vh;
+    background-color: rgba(26, 138, 83, 0.9);
+    float: left;
+}
+
+ul {
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+ul li * {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+main {
+    width: 83%;
+    position: absolute;
+    right: 0;
+    margin-left: 2%;
+}
+
+main header {
+    width: 98%;
+    height: 6vh;
+    margin-bottom: 3vh;
+    background-color: #FFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header h3 {
+    position: relative;
+    top: calc(100% - 45px);
+    padding: 10px;
+}
+
+main section {
+    float: left;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+.fsection {
+    margin-right: 2%;
+    width: 65%;
+    height: 89vh
+}
+
+section:last-child {
+    width: 31%;
+    height: 89vh
+}
+
+select {
+    background-color: #FFF;
+    border: 1px gray solid;
+    width: 270px;
+    margin-top: 10px;
+}
+
+.farticle div {
+    float: left;
+    margin: 30px 40px;
+}
+
+article:last-child .parent {
+    padding: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 31.4%);
+    gap: 6% 3%;
+}
+
+.parent > div {
+    height: 19vh;
+    background-color: rgba(240, 237, 237, 1);
+    border-radius: 15px;
+    padding: 5%
+}
+
+.parent div h6 {
+    margin-bottom: 10px;
+}
+
+.parent div div {
+    margin: 7% 3% 0% 0%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent div div p {
+    font-size: 10px;
+}
+
+p span {
+    color: rgba(26, 138, 83, 0.9);
+}
