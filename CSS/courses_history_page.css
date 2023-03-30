@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+ body > header {
+    width: 15%;
+    height: 100vh;
+    background-color: rgba(26, 138, 83, 0.9);
+    float: left;
+}
+
+ul {
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+ul li * {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+main {
+    width: 83%;
+    position: absolute;
+    right: 0;
+    margin-left: 2%;
+}
+
+main header {
+    width: 98%;
+    height: 6vh;
+    margin-bottom: 3vh;
+    background-color: #FFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header h3 {
+    position: relative;
+    top: calc(100% - 45px);
+    padding: 10px;
+
+}
+
+main section {
+    width: 98%;
+    height: 89vh;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+section h3 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+section div {
+    margin-top: 50px;
+   text-align: center;
+}
+
+select {
+    width: 40%;
+    height: 4vh;
+    background-color: #FFF;
+    border: 1px gray solid;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 15px auto;
+   width: 80%;
+}
+
+thead tr {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+td, th {
+    border: 1px #ddd solid;
+    text-align: center;
+}
+
+
