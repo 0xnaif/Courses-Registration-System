@@ -93,7 +93,7 @@ section:last-child {
 select {
     background-color: #FFF;
     border: 1px gray solid;
-    width: 270px;
+    width: 300px;
     margin-top: 10px;
 }
 
@@ -114,8 +114,14 @@ article:last-child .parent {
     height: 19vh;
     background-color: rgba(240, 237, 237, 1);
     border-radius: 15px;
-    padding: 5%
+    padding: 5%;
+    transition-duration: .9s;
 }
+
+.parent > div:hover {
+    transform: scale(1.1);
+}
+
 
 .parent div h6 {
     margin-bottom: 10px;
@@ -134,4 +140,19 @@ article:last-child .parent {
 
 p span {
     color: rgba(26, 138, 83, 0.9);
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 100%
+}
+
+thead tr {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+td, th {
+    border: 1px #ddd solid;
+    text-align: center;
 }
