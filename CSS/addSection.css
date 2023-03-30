@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+ body > header {
+    width: 15%;
+    height: 100vh;
+    background-color: rgba(26, 138, 83, 0.9);
+    float: left;
+}
+
+ul {
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 15px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+ul li * {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+main {
+    width: 83%;
+    position: absolute;
+    right: 0;
+    margin-left: 2%;
+}
+
+main header {
+    width: 98%;
+    height: 6vh;
+    margin-bottom: 3vh;
+    background-color: #FFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header h3 {
+    position: relative;
+    top: calc(100% - 45px);
+    padding: 10px;
+}
+
+main section {
+    width: 98%;
+    height: 60vh;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#submit {
+    background-color: rgba(26, 138, 83, 0.9);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    top:75%;
+    left:31%;
+    position: absolute;
+    z-index: 2;
+  }
+
+section div {
+    margin: auto;
+}
+
+section div div {
+    float: left;
+    height: 8vh;
+    width: 200px;
+    margin: 35px 80px 35px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 15px;
+}
