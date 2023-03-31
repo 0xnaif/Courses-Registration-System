@@ -13,6 +13,9 @@ Green: rgba(26, 138, 83);
 Schedule Background: rgba(240, 237, 237, 0.5)
 Navigation Bar Background On Hover: rgba(255, 255, 255, 0.34)
 
+##Border
+- Border Radius: 15px;
+
 ## Typography
 
 ### Body Copy
@@ -21,4 +24,8 @@ Navigation Bar Background On Hover: rgba(255, 255, 255, 0.34)
 
 ### Font
 
-- Family: Poppins [https://fonts.googleapis.com/css2?family=Poppins]
+- Family: Poppins [
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+]
