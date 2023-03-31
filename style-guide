@@ -9,7 +9,7 @@ The designs should be created to the following widths:
 
 ## Colors
 Pages Background: rgba(245, 245, 245, 1)
-Green: rgba(26, 138, 83, 0.9)
+Green: rgba(26, 138, 83);
 Schedule Background: rgba(240, 237, 237, 0.5)
 Navigation Bar Background On Hover: rgba(255, 255, 255, 0.34)
 
