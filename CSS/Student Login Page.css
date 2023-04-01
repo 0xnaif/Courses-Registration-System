@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+}
+
+ body > header {
+    float: left;
+    width: 100%;
+    height: 10vh;
+    background-color:rgba(26, 138, 83);
+}
+
+ul {
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    padding: 5px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+main {
+    width: 83%;
+    position: absolute;
+    right: -10px;
+    margin-left: 2%;
+}
+
+div{
+    position: relative;
+    left: 30px;
+    margin: 300px 300px;
+}
+div div{
+    margin: 0px 0px;
+    margin-left: 80px;   
+}
+span {
+    align-items: left;
+    word-spacing: 20px;
+    color: rgba(26, 138, 83);
+}
+
+#loginbtn{
+    width: 53%;
+    background-color: rgba(26, 138, 83);
+    color: #FFF;
+    border-radius: 10px;
+    border: none;
+}
+
+#idspan{
+    word-spacing: normal;
+    
+}
+
+
+h2 {
+    color: rgba(26, 138, 83);
+
+}
+
+  #search {
+    padding: 4px 10px;
+    border: 0;
+    font-size: 16px;
+  }
+  
+  .search {
+    width: 10%;
+  }
+  
+  .submit {
+    width: 70px;
+    background-color:#FFF;
+    color: searchbar1;
+  }
+
+  #searchbar {
+    left: 1200px;
+    top: -40px;
+    position: relative;
+    
+  }
+
+  h3 {
+    color: black;
+    text-decoration: underline;
+  }
+
+  #notaStudent {
+    position:relative ;
+    left: 18%;
+   word-spacing: normal; 
+  }
+
+
