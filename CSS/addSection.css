@@ -120,3 +120,114 @@ h4 {
 p {
     font-size: 15px;
 }
+
+/* Small/Medium Screens */
+@media (max-width: 767px) {
+    body > header {
+        float: none;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        position: fixed;
+        background-color: rgba(26, 138, 83);
+    }
+  
+    nav {
+        width: 95%;
+        margin: auto;
+    }
+  
+    .icon {
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        transition: 0.4s;
+    }
+  
+  
+    .icon span {
+        background-color: #f6f6f6;
+        margin-bottom: 5px;
+        height: 3px;
+        width: 100%;
+        transition: 0.5s;
+    }
+  
+    .icon span:nth-child(2) {
+        width: 60%;
+    }
+  
+    .icon:hover span:nth-child(2) {
+        width: 100%;
+    }
+  
+    ul {
+        background-color: rgba(26, 138, 83);
+        width: 200px;
+        position: absolute;
+        top: calc(0% + 24px);
+        display: none;
+    }
+  
+    .links {
+        width: fit-content;
+    }
+  
+    .links:hover ul {
+        display: block;
+    }
+  
+    ul li:not(:last-child) {
+        border-bottom: 1px #FFF solid;
+    }
+  
+    ul li a {
+        transition: 0.5s;
+    }
+  
+    ul li:hover a{
+        padding-left: 15px;
+    }
+  
+    .current {
+        background-color: inherit;
+    }
+  
+    main {
+        width: 100%;
+        top: 6%;
+        overflow: hidden;
+        z-index: -1;
+        padding: 10px;
+    }
+  
+    main header {
+        margin: auto;
+        margin-bottom: 10px
+    }
+
+    main section {
+        margin: auto;
+        height: 100%; 
+        overflow: hidden;
+    }
+
+    #submit {
+        background-color: rgba(26, 138, 83, 0.9);
+        border: none;
+        border-radius: 12px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+
+        top:90%;
+        left:18%;
+        position: absolute;
+        z-index: 2;
+    }
+  
+  }
