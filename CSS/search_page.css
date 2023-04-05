@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+}
+
+body header {
+    background-color: rgba(26, 138, 83);
+    color: #FFF;
+    padding: 10px
+}
+
+main > div {
+    width: 70%;
+    margin: auto
+}
+
+main div h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    background-color: #FFF;
+    border: 1px gray solid;
+    width: 300px;
+    height: 28px;
+    margin-top: 10px;
+}
+
+main div p:last-child {
+    text-align: center;
+    margin-top: 80px;
+
+}

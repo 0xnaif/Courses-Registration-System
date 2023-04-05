@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+ body > header {
+    width: 15%;
+    height: 100vh;
+    background-color: rgba(26, 138, 83);
+    float: left;
+}
+
+ul {
+    padding: 0;
+    margin-top: 15px;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    color: #FFF;
+    font-size: 15px;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+ul li * {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+img {
+    width: 15px;
+    height: 15px;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.34);
+}
+
+main {
+    width: 83%;
+    position: absolute;
+    right: 0;
+    margin-left: 2%;
+}
+
+main header {
+    width: 98%;
+    height: 6vh;
+    margin-bottom: 3vh;
+    background-color: #FFF;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header h3 {
+    position: relative;
+    top: calc(100% - 45px);
+    padding: 10px;
+}
+
+main section {
+    float: left;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 1%;
+}
+
+.fsection {
+    margin-right: 2%;
+    width: 65%;
+    height: 89vh;
+    overflow: auto;
+    
+}
+
+section:last-child {
+    width: 31%;
+    height: 89vh
+}
+
+select {
+    background-color: #FFF;
+    border: 1px gray solid;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.farticle div {
+    float: left;
+    margin: 30px 40px;
+}
+
+.farticle div p {
+    font-weight: 600;
+}
+
+article:last-child .parent {
+    padding: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 31.4%);
+    gap: 6% 3%;
+}
+
+.parent > div {
+    height: 100%;
+    background-color: rgba(240, 237, 237, 1);
+    border-radius: 15px;
+    padding: 3%;
+    margin-bottom: 10px;
+    transition-duration: .9s;
+}
+
+.parent > div:hover {
+    transform: scale(1.1);
+}
+
+h5, h6 {
+    font-weight: 600;
+}
+
+.parent div h6 {
+    margin-bottom: 10px;
+}
+
+.parent div div {
+    margin: 7% 3% 0% 0%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.parent div div p {
+    font-size: 10px;
+}
+
+p span {
+    color: rgba(26, 138, 83);
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 100%
+}
+
+thead tr {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+th {
+    font-weight: 600;
+}
+
+td, th {
+    border: 1px #ddd solid;
+    text-align: center;
+}
+
+/* Small/Medium Screens */
+@media (max-width: 767px) {
+    body > header {
+        float: none;
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        position: fixed;
+        background-color: rgba(26, 138, 83);
+    }
+
+    nav {
+        width: 95%;
+        margin: auto;
+    }
+
+    .icon {
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+
+    .icon:hover span:nth-child(2) {
+        width: 100%;
+    }
+
+    .icon span {
+        background-color: #f6f6f6;
+        margin-bottom: 5px;
+        height: 3px;
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    .icon span:nth-child(2) {
+        width: 60%;
+    }
+
+    ul {
+        background-color: rgba(26, 138, 83);
+        width: 200px;
+        position: absolute;
+        top: calc(0% + 24px);
+        display: none;
+    }
+    
+    .links:hover ul {
+        display: block;
+    }
+
+    ul li:not(:last-child) {
+        border-bottom: 1px #FFF solid;
+    }
+
+    ul li a {
+        transition: 0.5s;
+    }
+
+    ul li:hover a{
+        padding-left: 15px;
+    }
+
+    .current {
+        background-color: inherit;
+    }
+
+    main {
+        width: 100%;
+        top: 6%;
+        overflow: hidden;
+        z-index: -1;
+        padding: 10px;
+    }
+
+    main header {
+        margin: auto;
+        margin-bottom: 20px
+    }
+
+    main section {
+        float: none;
+        margin: auto;
+    }
+
+    .fsection {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    article:last-child .parent {
+        padding: 2%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 3% 3%;
+    }
+
+    select {
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    section:last-child {
+        width: 100%;
+        margin: 0 0 20px 0;
+        height: fit-content
+    }
+
+}
