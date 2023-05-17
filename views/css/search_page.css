@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+    margin: 0;
+}
+
+body header {
+    background-color: rgba(26, 138, 83);
+    color: #FFF;
+    padding: 10px
+}
+
+main > div {
+    width: 70%;
+    margin: auto
+}
+
+main div h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+select {
+    background-color: #FFF;
+    border: 1px gray solid;
+    width: 300px;
+    height: 28px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.but {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.but button {
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: #FFF;
+    background-color: rgba(26, 138, 83);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.but button:hover {
+    background-color: rgb(100, 179, 141);
+}
+
+main div p:last-child {
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+table {
+    border-collapse: collapse;
+    margin: 15px auto;
+   width: 80%;
+}
+
+thead tr {
+    background-color: rgba(245, 245, 245, 1)
+}
+
+th {
+    font-weight: 600;
+}
+
+td, th {
+    border: 1px #ddd solid;
+    text-align: center;
+}
