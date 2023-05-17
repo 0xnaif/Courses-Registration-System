@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/add_section.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Add New Section</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="links">
+                <span class = "icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li>
+                        <img src="/profile_icon.png" alt="name_icon.PNG">
+                        <a href="add_course">Ahmad</a>
+                    </li>
+                    <li>
+                        <img src="/add_course_icon.png" alt="add_course.png">
+                        <a href = "/add_course">Add new course</a>
+                    </li>
+                    <li class = "current">
+                        <img src="/add_section_icon.png" alt="add_section_icon.png">
+                        <a href="/add_section">Add new section</a>
+                    </li>
+                    <li>
+                        <img src="/edit_icon.png" alt="edit.png">
+                        <a href="/edit_section">Edit section</a>
+                    </li>
+                    <li>
+                        <img src="/show_section_icon.png" alt="search.png">
+                        <a href="/show_section">Show section</a>
+                    </li>
+                    <li>
+                        <img src="/logout.png" alt="courses_history_icon.png">
+                        <a href="/administrator_login_page">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h3>Add new section</h3>
+        </header>
+        <section>
+            <h3>Section Information</h3>
+            <div>
+                <div>
+                    <p>Course Name</p> 
+                    <select name="" id="CourseName">
+                        <option value="" selected>Select Course Name</option>
+                        <option value="104">ICS 104</option>
+                        <option value="108">ICS 108</option>
+                        <option value="202">ICS 202</option>
+                        <option value="202_lab">ICS 202-LAB</option>
+                        <option value="206">SWE 206</option>
+                        <option value="206_lab">SWE 206-LAB</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Class Time</p> 
+                    <select name="" id="ClassTime">
+                        <option value="" selected>Select Time</option>
+                        <option value="8-9">8:00-8:50</option>
+                        <option value="9-10">9:00-9:50</option>
+                        <option value="10-11">10:00-10:50</option>
+                        <option value="11-12">11:00-11:50</option>
+                        <option value="1-2">1:00-1:50</option>
+                        <option value="2-3">2:00-2:50</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Class Type</p>
+                    <select name="" id="">
+                        <option value="" selected>Select Type</option>
+                        <option value="222">Lecture</option>
+                        <option value="221">Lab</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Class Days</p>
+                    <select name="" id="">
+                        <option value="" selected>Select Class Days</option>
+                        <option value="222">UTR</option>
+                        <option value="221">MW</option>
+                        <option value="221">U</option>
+                        <option value="221">T</option>
+                        <option value="221">R</option>
+                        <option value="221">M</option>
+                        <option value="221">W</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Class Location</p>
+                    <select name="" id="ClassLocation">
+                        <option value="" selected>Select Location</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="63">63</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Instructor</p>
+                    <select name="" id="ClassInstructor">
+                        <option value="" selected>Select Instructor</option>
+                        <option value="mohammed">Mohammed</option>
+                        <option value="ahmad">Ahmad</option>
+                        <option value="khalid">Khalid</option>
+                        <option value="huasasn">Huasasn</option>
+                        <option value="ali">Ali</option>
+                        <option value="fahd">Fahd</option>
+                        <option value="othman">Othman</option>
+                    </select>
+                </div>
+                <div>
+                    <input id = "submit" type = "submit" value = "Add">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

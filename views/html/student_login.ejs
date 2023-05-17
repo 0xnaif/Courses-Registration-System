@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/student_login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Student Login Page</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1>Course Regestration System</h1>
+        <div>
+            <img src="/search_icon.png" alt="search_icon.png">
+            <a href = "/search_page">Search</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class = "container">
+        <h2>Log In</h2>
+        <form action = "/login" method = "post">
+          <div>
+              <label for = "id">Student ID</label>
+              <input id = "id" name = "id" type="text"/>
+          </div>
+          <div>
+              <label for = "password">Password </label>
+              <input id = "password" name = "password" type = "password"/>
+          </div>
+          <%if (ans) {%>
+            <div style = "justify-content: center; color: red; font-size: 12px;">
+              Try again, id or assword is wrong
+            </div>
+            <%}%>
+            
+          <!-- }%> -->
+          <div>
+            <button type = "submit" class = "log">LOGIN</button>
+          </div>
+      </form>
+        <div>
+            <a href = "/administrator_login_page">Not a Student?</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

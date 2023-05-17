@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "/add_course.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Add new Course</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="links">
+                <span class = "icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li>
+                        <img src="/profile_icon.png" alt="name_icon.PNG">
+                        <a href="add_course">Ahmad</a>
+                    </li>
+                    <li class = "current">
+                        <img src="/add_course_icon.png" alt="add_course.png">
+                        <a href = "/add_course">Add new course</a>
+                    </li>
+                    <li>
+                        <img src="/add_section_icon.png" alt="add_section_icon.png">
+                        <a href="/add_section">Add new section</a>
+                    </li>
+                    <li>
+                        <img src="/edit_icon.png" alt="edit.png">
+                        <a href="/edit_section">Edit section</a>
+                    </li>
+                    <li>
+                        <img src="/show_section_icon.png" alt="search.png">
+                        <a href="/show_section">Show section</a>
+                    </li>
+                    <li>
+                        <img src="/logout.png" alt="courses_history_icon.png">
+                        <a href="/administrator_login_page">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h3>Add new Course</h3>
+        </header>
+        <section>
+            <h3>Course Information</h3>
+            <div>
+                <div>
+                    <p>Course Full Name</p> 
+                    <input id="CourseFullName" name="cfname" type="text" />
+                </div>
+                <div>
+                    <p>Course Abbreviation</p>
+                    <input id="CourseAbbreviation" name="cabbreviation" type="text" />
+                </div>
+                <div>
+                    <p>Course Credit</p>
+                    <input id="CourseCredit" name="ccredit" type="number" />
+                </div>
+                <div>
+                    <p>Course Pre-requisite</p>
+                    <input id="CoursePrerequisite" name="cprequisite" type="text" placeholder="exp: SWE363/ICS253"/>
+                </div>
+                <div>
+                    <p>Course Co-requisite</p>
+                    <input id="CourseCorequisite" name="ccrequisite" type="text" placeholder="exp: SWE363/ICS253"/>
+                </div>
+                <div></div>
+                <div>
+                    <input id="submit" type="submit" value = "Add">
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

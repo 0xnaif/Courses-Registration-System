@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/search_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Search Page</title>
+</head>
+<body>
+    <header>
+        <h2>Course Regestration System</h2>
+    </header>
+    <main>
+        <div>
+            <h2>Search</h2>  
+            <form action = "search_page" method = "post">
+                <div class = "container">
+                        <div>
+                            <p>Term</p>
+                            <select name = "term">
+                                <option value = "none" selected>Select Term</option>
+                                <option value="222">Term 222</option>
+                                <option value="221">Term 221</option>
+                                <option value="213">Term 213</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Department</p>
+                            <select name = "dept">
+                                <option value = "none" selected>Select Department</option>
+                                <option value = "ICS">ICS</option>
+                                <option value = "MATH">MATH</option>
+                                <option value = "CHEM">CHEM</option>
+                            </select>
+                        </div>
+                </div>
+                <div class = "but">
+                    <button type = "submit">Search</button>
+                </div>
+            </form>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>CRN</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Loc</th>
+                            <th>Instructor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% if (courses !== null) {%>
+                        <%courses.forEach(course => {%>
+                        <tr>
+                            <td><%=course.c_abbr%>-<%=course.sec%>-<%=course.type%></td>
+                            <td><%=course.crn%></td>
+                            <td><%=course.days%> </td>
+                            <td><%=course.time%></td>
+                            <td><%=course.build%>-<%=course.room%></td>
+                            <td><%=course.inst%> </td>
+                        </tr>
+                        <%});%>
+                        <%}%>
+                    </tbody>
+                </table>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

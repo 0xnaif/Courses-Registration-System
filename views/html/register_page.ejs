@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/register_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="links">
+                <span class = "icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                <ul>
+                    <li>
+                        <img src="/name_icon.PNG" alt="name_icon.PNG">
+                        <a href = "/my_profile_page"><%=stu_name%></a>
+                    </li>
+                    <li>
+                        <img src="/profile_icon.png" alt="profile_icon.png">
+                        <a href = "/my_profile_page">My Profile</a>
+                    </li>
+                    <li class = "current">
+                        <img src="/register_icon.png" alt="register_icon.png">
+                        <a href="/register_page">Register</a>
+                    </li>
+                    <li>
+                        <img src="/courses_history_icon.png" alt="courses_history_icon.png">
+                        <a href="/courses_history_page">Courses History</a>
+                    </li>
+                    <li>
+                        <img src="/logout.png" alt="courses_history_icon.png">
+                        <a href = "/">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h3>Register</h3>
+        </header>
+        <section class = "fsection">
+            <h3>Search</h3>
+            <article class = farticle>
+                <form action = "register_page" method = "post">
+                    <div class = "int">
+                        <div>
+                            <p>Term</p>
+                            <select name = "term" id = "">
+                                <option value = "none" selected>Select Term</option>
+                                <option value = "222">Term 222</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Department</p>
+                            <select name = "dept" id="">
+                                <option value = "none" selected>Select Department</option>
+                                <option value = "ICS">ICS</option>
+                                <option value = "MATH">MATH</option>
+                                <option value = "CHEM">CHEM</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class = "but">
+                        <button type = "submit">Search</button>
+                    </div>
+                </form>
+            </article>
+               
+            <article>
+                <div class = parent>
+                    <!-- <form action = "register_page"> -->
+                        <%if (sections !== null) {%>
+                        <%sections.forEach(section => {%>
+                        <a href = "register_page/<%=section._id%>">
+                            <h5><%=section.c_abbr%>-<%=section.sec%>-<%=section.type%></h5>
+                            <h6><%=section.c_name%></h6>
+                            <div>
+                                <p>CRN: <%=section.crn%></p>
+                                <p>Ins: <%=section.inst%></p>
+                            </div>
+                            <div>
+                                <p>Day: <%=section.days%></p>
+                                <p>Loc: <%=section.build%>-<%=section.room%></p>
+                            </div>
+                            <div>
+                                <p>Time: <%=section.time%></p>
+                                <p>Status: <span><%=section.status%></span></p>
+                            </div>
+                        </a>
+                        <%});%>
+                        <%}%>
+                    <!-- </form> -->
+                </div>
+            </article>
+        </section>
+        <section>
+            <h3>Schedule</h3>
+            <article>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>CRN</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Loc</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%if (secs !== null) {%>
+                        <%secs.forEach(sec => {%>
+                        <%if (sec.student === stu_id) {%>
+                        <tr>
+                            <td><%=sec.c_abbr%>-<%=sec.sec%>-<%=sec.type%></td>
+                            <td><%=sec.crn%></td>
+                            <td><%=sec.days%></td>
+                            <td><%=sec.time%></td>
+                            <td><%=sec.build%>-<%=sec.room%></td>
+                            <td>
+                                <a href = "delete/<%=sec._id%>?_method=delete">
+                                    <img src="/remove.png" alt="">
+                                </a>
+                            </td>
+                        </tr>
+                        <%}%>
+                        <%});%>
+                        <%}%>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
